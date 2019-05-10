@@ -1,0 +1,21 @@
+If you want to password protect an individual file, on the other hand, you'll continue:
+
+1.Create your htaccess file for the file you want to protect. Open a text file called
+
+.htaccess
+
+2.Add the following to the file:
+
+ AuthUserFile /path/to/htpasswd/file/.htpasswd AuthName "Name of Page" AuthType Basic  require valid-user
+3.Change
+
+/path/to/htpasswd/file/.htpasswd
+4.Change
+
+"Name of Page"
+5.Change
+
+"mypage.html"
+6.Save the file and upload it to the directory of the file you want protected.
+
+7.Test that the password works by accessing the URL. If your password doesn't work, go back to the encryption programs and encrypt it again, remember that the username and password will be case-sensitive. If you are not prompted for a password, contact your system administrator to make sure that HTAccess is turned on for your site.
