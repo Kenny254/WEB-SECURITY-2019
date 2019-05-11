@@ -1,0 +1,19 @@
+#index file with required files
+
+<?php
+defined ('Myheader', TRUE);
+require ('header.php');
+require ('body.php');
+>
+
+
+# required file hiden from access
+
+<?php
+if(! defined ('Myheader'))
+{
+exit('You have been censored!');
+}
+echo "<p>This is the header </p>";
+>
+
